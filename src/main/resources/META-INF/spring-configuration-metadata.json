@@ -1,0 +1,12 @@
+{
+  "hints":[],
+  "groups":[],
+  "properties": [
+    {
+      "sourceType": "custom.springboot.starter.demo.configuration.MyProperties",
+      "name": "my.loginName",
+      "description": "登录名",
+      "type": "java.lang.String"
+    }
+  ]
+}
