@@ -25,7 +25,7 @@ import org.springframework.context.annotation.Import;
 @Configuration
 @EnableConfigurationProperties(MyProperties.class)
 //@Import(TeacherAutoConfiguration.class)
-//@AutoConfigureAfter({StudentAutoConfiguration.class,TeacherAutoConfiguration.class})
+@AutoConfigureAfter({StudentAutoConfiguration.class,TeacherAutoConfiguration.class})
 public class MyAutoConfiguration {
     public MyAutoConfiguration() {
         System.out.println("加载MyAutoConfiguration");
@@ -38,12 +38,12 @@ public class MyAutoConfiguration {
      * @param myProperties
      * @return
      */
-    @Bean
-    @ConditionalOnBean({Teacher.class})
-    public Student student(MyProperties myProperties) {
-        Student student = new Student(myProperties.getLoginName());
-        return student;
-    }
+//    @Bean
+//    @ConditionalOnBean({Teacher.class})
+//    public Student student(MyProperties myProperties) {
+//        Student student = new Student(myProperties.getLoginName());
+//        return student;
+//    }
 
     @Bean
     @Conditional(MatchCondition.class)

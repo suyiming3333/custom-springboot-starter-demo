@@ -1,1 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  custom.springboot.starter.demo.configuration.MyAutoConfiguration,\
+  custom.springboot.starter.demo.configuration.TeacherAutoConfiguration,\
+  custom.springboot.starter.demo.configuration.StudentAutoConfiguration
