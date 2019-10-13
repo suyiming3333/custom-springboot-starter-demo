@@ -24,8 +24,8 @@ import org.springframework.context.annotation.Import;
 
 @Configuration
 @EnableConfigurationProperties(MyProperties.class)
-//@Import(TeacherAutoConfiguration.class)
-@AutoConfigureAfter({StudentAutoConfiguration.class,TeacherAutoConfiguration.class})
+@Import({StudentAutoConfiguration.class,TeacherAutoConfiguration.class})
+//@AutoConfigureAfter({StudentAutoConfiguration.class,TeacherAutoConfiguration.class})
 public class MyAutoConfiguration {
     public MyAutoConfiguration() {
         System.out.println("加载MyAutoConfiguration");
